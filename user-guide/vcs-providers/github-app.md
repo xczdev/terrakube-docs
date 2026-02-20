@@ -4,6 +4,12 @@
 This feature is supported from Terrakube 2.23.0
 {% endhint %}
 
+{% hint style="warning" %}
+NOTE: Token generation and refresh in 'Github App' mode are primarily driven by the `APP ID`. If multiple VCS instances share the same `APP ID`, the system will only regenerate the token for the first one encountered.
+
+For more details, see: [Github Issue](https://github.com/terrakube-io/terrakube/issues/2938)
+{% endhint %}
+
 For using repositories from GitHub.com with Terrakube workspaces and modules you will need to follow these steps:
 
 {% hint style="info" %}
