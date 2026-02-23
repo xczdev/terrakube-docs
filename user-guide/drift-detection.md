@@ -29,6 +29,7 @@ updated := updated_count {
 no_change := no_change_count {
     resources := [resource | resource:= tfplan.resource_changes[_]; resource.change.actions[_] == "no-op"]
     no_change_count := count(resources)
+}
 ```
 
 The output of this policy will look like this:
